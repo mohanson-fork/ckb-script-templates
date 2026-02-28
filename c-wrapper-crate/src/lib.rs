@@ -11,6 +11,6 @@ unsafe fn bar() -> core::ffi::c_int {
     unreachable!()
 }
 
-pub fn value() -> u32 {
-    (unsafe { bar() }) as u32
+pub fn value() -> i32 {
+    unsafe { bar() }
 }
